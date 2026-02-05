@@ -25,24 +25,6 @@ This work was conducted as part of an M1 research project (2025) under the super
 - Unsupervised learning: K-Means, hierarchical clustering
 - Correlation and regression analyses
 
-Raw EEG data are not included due to ethical constraints.
-
----
-
-## Notes
-
-This repository reflects exploratory research aimed at understanding feature structure and interpretability in EEG data.  
-Detailed methodology, results, and discussion are provided in the accompanying research report.
-
----
-
-## Supervisor
-
-**Dr. Axel Hutt**  
-INRIA / ICube, France
-
----
-
 ## Author
 
 **Rosario Huaranca**  
