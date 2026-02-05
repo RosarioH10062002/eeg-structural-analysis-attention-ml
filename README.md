@@ -1,60 +1,50 @@
-# Structural Analysis of High-Dimensional EEG Signals using Machine Learning
+# Structural Organization of EEG Features in Attention States
 
-This repository contains the code developed during a research internship (February–May 2025) under the supervision of **Dr. Axel Hutt**, focused on the analysis of high-dimensional EEG data using machine learning and statistical techniques.
+This repository contains the code developed for a research project on the structural analysis of EEG-derived spectral features and their relationship to attentional states.
 
-The project explores how spectral features extracted from multichannel EEG recordings can be leveraged to characterize attentional states, identify redundancy across electrodes, and assess separability between attentive and inattentive groups.
+The project focuses on understanding how inter-channel relationships and feature geometry emerge in high-dimensional EEG data, rather than on optimizing classification performance.
 
----
-
-## Project Overview
-
-Electroencephalography (EEG) produces high-dimensional time-series data that require careful feature extraction and dimensionality reduction to reveal meaningful structure.  
-In this project, full 64-channel EEG recordings were processed to extract frequency-domain features across canonical bands, followed by both supervised and unsupervised learning approaches.
-
-The primary objectives were to:
-
-- Characterize spectral signatures of attentional vs. inattentive states  
-- Reduce dimensionality while preserving discriminative structure  
-- Explore inter-channel relationships and synchrony patterns  
-- Evaluate classification performance using interpretable machine learning models  
+This work was conducted as part of an M1 research project (2025) under the supervision of **Dr. Axel Hutt** (INRIA / ICube).
 
 ---
 
-## Data Description
+## Research Focus
 
-- **Modality:** EEG  
-- **Channels:** 64 electrodes  
-- **Features:**  
-  - Delta power  
-  - Alpha power  
-  - Theta/Beta Ratio (TBR)  
-- **Spatial focus:**  
-  - Frontal site: Fpz  
-  - Posterior site: Pz  
+- High-dimensional structure of EEG spectral features  
+- Fronto-parietal (Fpz–Pz) relationships in attention and inattention  
+- Dimensionality reduction as a tool for structure discovery  
+- Limits of classification-based evaluation in noisy neural data  
+
 ---
 
-## Methods
+## Methods (High-Level)
 
-### Feature Extraction
-- Frequency-band power computed for all electrodes
-- Targeted analysis on frontal and posterior regions
-- Band-specific aggregation for delta, alpha, and TBR features
+- Spectral features: delta, alpha, theta/beta ratio (TBR)
+- Dimensionality reduction: PCA, ICA, UMAP, t-SNE
+- Supervised learning: SVM, Extra Trees
+- Unsupervised learning: K-Means, hierarchical clustering
+- Correlation and regression analyses
 
-### Dimensionality Reduction
-Used to identify redundancy and visualize group separability:
-- Principal Component Analysis (PCA)
-- Uniform Manifold Approximation and Projection (UMAP)
-- t-distributed Stochastic Neighbor Embedding (t-SNE)
+Raw EEG data are not included due to ethical constraints.
 
-### Machine Learning
-- **Supervised learning**
-  - Support Vector Machines (SVM)
-  - Extra Trees Classifier
-  - Cross-validation for performance estimation
-- **Unsupervised learning**
-  - K-Means clustering
-  - Hierarchical clustering
+---
 
-### Statistical Analysis
-- Correlation analyses to assess inter-channel synchrony
-- Regression analyses to explore accuracy and feature trends
+## Notes
+
+This repository reflects exploratory research aimed at understanding feature structure and interpretability in EEG data.  
+Detailed methodology, results, and discussion are provided in the accompanying research report.
+
+---
+
+## Supervisor
+
+**Dr. Axel Hutt**  
+INRIA / ICube, France
+
+---
+
+## Author
+
+**Rosario Huaranca**  
+MSc Information Sciences and Technology for Healthcare  
+Strasbourg, France
