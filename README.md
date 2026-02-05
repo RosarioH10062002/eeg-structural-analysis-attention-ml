@@ -24,9 +24,3 @@ This work was conducted as part of an M1 research project (2025) under the super
 - Supervised learning: SVM, Extra Trees
 - Unsupervised learning: K-Means, hierarchical clustering
 - Correlation and regression analyses
-
-## Author
-
-**Rosario Huaranca**  
-MSc Information Sciences and Technology for Healthcare  
-Strasbourg, France
